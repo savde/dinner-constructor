@@ -23,6 +23,7 @@ public class Main {
                     generateDishCombo();
                     break;
                 case "3":
+                    System.out.println("Завершение работы программы.");
                     return;
             }
         }
@@ -40,6 +41,7 @@ public class Main {
         String dishType = scanner.nextLine();
         System.out.println("Введите название блюда:");
         String dishName = scanner.nextLine();
+        dc.addDish(dishType, dishName);
 
         // добавьте новое блюдо
     }
